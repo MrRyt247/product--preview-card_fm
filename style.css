@@ -145,4 +145,9 @@ button > span {
         background-size: 100% 100%;
         border-radius: 10px 10px 0 0;
     }
+
+    .attribution {
+        font-size: 11px;
+        font-weight: 400;
+}
 }
