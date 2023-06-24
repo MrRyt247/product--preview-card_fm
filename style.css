@@ -1,0 +1,68 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+    
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--lightGray);
+    overflow: hidden;
+}
+
+.container {
+    min-width: 400px;
+    max-width: 600px;
+    aspect-ratio: 1.33;
+    box-shadow: 0 0 5px 2px #0001;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image {
+    background: url(images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 102%;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    background-color: green;
+    border: solid 1px transparent;
+    border-radius: 7px;
+    height: 40px;
+}
+
+.attribution {
+    font-family: 'Courier New', monospace;
+    font-weight: 800;
+    text-align: center;
+}
+
+.attribution a:first-child {
+    text-decoration: none;
+    color: rgb(2, 48, 255);
+}
+
+.attribution a:last-child {
+    text-decoration: none;
+    color: red;
+}
