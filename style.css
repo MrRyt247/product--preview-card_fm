@@ -1,26 +1,24 @@
 :root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
-    --lightGray: hsl(212, 45%, 89%);
-    --grayishBlue: hsl(220, 15%, 55%);
-    --darkBlue: hsl(218, 44%, 22%);
-    
 }
 
 body {
     margin: 0;
     height: 100vh;
-    font-family: Helvetica;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--lightGray);
+    background-color: var(--cream);
     overflow: hidden;
 }
 
 .container {
-    min-width: 400px;
-    max-width: 600px;
+    max-width: 560px;
     aspect-ratio: 1.33;
     box-shadow: 0 0 5px 2px #0001;
     border-radius: 10px;
@@ -35,20 +33,75 @@ body {
     background-position: center;
     background-size: 102%;
     border-radius: 10px 0 0 10px;
+    height: inherit;
 }
 
 .content {
-    padding: 2rem;
+    height: inherit;
+    padding: 1.8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'Montserrat', Calibri;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    color: var(--darkGrayishBlue);
+}
+
+h1 {
+    font-family: 'Fraunces', Cambria;
+    font-weight: 700;
+    color: var(--veryDarkBlue);
+    line-height: 32px;
+}
+
+p {
+    font-size: 14px;
+    color: var(--darkGrayishBlue);
+    margin: 1px;
+}
+
+.price {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price > span:first-child {
+    color: var(--darkCyan);
+    font-family: 'Fraunces', Cambria;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.price > span:last-child {
+    color: var(--darkGrayishBlue);
+    font-size: 14px;
+    text-decoration: line-through;
 }
 
 button {
-    background-color: green;
+    background-color: var(--darkCyan);
     border: solid 1px transparent;
     border-radius: 7px;
-    height: 40px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button > span {
+    margin-left: .5rem;
+    color: var(--white);
+    font-weight: 700;
 }
 
 .attribution {
