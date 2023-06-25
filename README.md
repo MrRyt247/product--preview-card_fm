@@ -54,6 +54,13 @@ Users should be able to:
 }
 ```
 
+- Landmarks
+```HTML
+<p role="content">
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+</p>
+```
+
 ### Continued development
 
 - Imported fonts
