@@ -130,7 +130,6 @@ button > span {
 }
 
 @media only screen and (max-width: 430px) {
-
     .container {
         max-width: 350px;
         aspect-ratio: .56;
