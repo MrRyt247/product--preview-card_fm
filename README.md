@@ -48,6 +48,7 @@ Users should be able to:
 ### What I learned
 
 - I learnt a suitable way of writing media queries for mobile view
+
 ``` CSS
 @media only screen and (max-width: 430px) {
 

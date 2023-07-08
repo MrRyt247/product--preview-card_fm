@@ -117,6 +117,8 @@ button > span {
     font-family: 'Courier New', monospace;
     font-weight: 800;
     text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .attribution a:first-child {
